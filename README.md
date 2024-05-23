@@ -119,3 +119,4 @@ The project is designed to be modular, with each type of document processing han
 1. **Improve OCR for PDF Files**: Enhance the OCR processing to better handle complex PDF layouts and improve text extraction accuracy.
 2. **Support for Additional File Types**: Extend support to other file types such as images, HTML, and more.
 3. **Metadata Extraction**: Add functionality to extract and process metadata from documents.
+4. **Misnamed file types**: Add support for mislabelled files to rename and convert. 
