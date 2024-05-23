@@ -113,3 +113,9 @@ This project automates the organization and text extraction from various documen
 ## 🛠️ Modular Design
 
 The project is designed to be modular, with each type of document processing handled by a specific utility module. This makes it easy to maintain and extend. You can add new processing functions or modify existing ones without affecting the rest of the project.
+
+## 🔮 Future Plans
+
+1. **Improve OCR for PDF Files**: Enhance the OCR processing to better handle complex PDF layouts and improve text extraction accuracy.
+2. **Support for Additional File Types**: Extend support to other file types such as images, HTML, and more.
+3. **Metadata Extraction**: Add functionality to extract and process metadata from documents.
