@@ -41,9 +41,9 @@ This project automates the organization and text extraction from various documen
     ```python
     import os
 
-    source_folder = r'C:\Users\david\OneDrive\Desktop\CSSS'
-    output_folder = r'C:\Users\david\OneDrive\Desktop\CSSS\text'
-    log_csv_path = r'C:\Users\david\OneDrive\Desktop\CSSS\logs\conversion_log.csv'
+    source_folder = r'C:\Users\messy_docs'
+    output_folder = r'C:\Users\messy_docs_txt'
+    log_csv_path = r'C:\Users\messy_docs\conversion_log.csv'
 
     # Define subfolder paths
     word_folder = os.path.join(source_folder, 'docs_word')
