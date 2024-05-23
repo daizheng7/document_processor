@@ -1,9 +1,9 @@
 import os
 
 #add folders source and output
-source_folder = r'D:\data\CGIAR\UNFCCC\gef_docs'
-output_folder = r'D:\data\CGIAR\UNFCCC\gef_txt_final'
-log_csv_path = r'D:\data\CGIAR\UNFCCC\conversion_log_final.csv'
+source_folder = r'C:\Users\david\OneDrive\Desktop\CSSS'
+output_folder = r'C:\Users\david\OneDrive\Desktop\CSSS\text'
+log_csv_path = r'C:\Users\david\OneDrive\Desktop\CSSS\conversion_log_final.csv'
 
 
 word_folder = os.path.join(source_folder, 'docs_word')

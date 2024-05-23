@@ -1,4 +1,5 @@
 import os
+import csv
 import pytesseract
 from pdf2image import convert_from_path
 from .log_utils import log_error

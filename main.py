@@ -9,11 +9,11 @@ def main():
     move_files(settings.source_folder)
     
     print("Starting to process Word files...")
-    process_folder(settings.word_folder, settings.output_folder)
+    process_folder(settings.word_folder, settings.output_folder, settings.log_csv_path)
     print("Finished processing Word files.")
     
     print("Starting to process Excel files...")
-    process_excel_folder(settings.excel_folder, settings.output_folder)
+    process_excel_folder(settings.excel_folder, settings.output_folder, settings.log_csv_path)
     print("Finished processing Excel files.")
     
     print("Starting to process PDF files...")
@@ -21,11 +21,11 @@ def main():
     print("Finished processing PDF files.")
     
     print("Starting to process OCR PDF files...")
-    process_ocr_folder(settings.ocr_folder, settings.output_folder)
+    process_ocr_folder(settings.ocr_folder, settings.output_folder, settings.log_csv_path)
     print("Finished processing OCR PDF files.")
     
     print("Starting to process Word 97 files...")
-    process_word97_folder(settings.word97_folder, settings.output_folder)
+    process_word97_folder(settings.word97_folder, settings.output_folder, settings.log_csv_path)
     print("Finished processing Word 97 files.")
 
 if __name__ == "__main__":

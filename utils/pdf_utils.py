@@ -1,4 +1,6 @@
+import os
 import fitz  # PyMuPDF
+import csv
 from .log_utils import log_error
 
 def extract_text_from_pdf(pdf_path, log_path):
