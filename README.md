@@ -19,7 +19,7 @@ In many projects, there's a need to process and extract text from a variety of d
 
 ## 🔍 Use Cases
 
-###💡 NLP and Text Mining
+### 💡 NLP and Text Mining
 For Natural Language Processing (NLP) and text mining applications, this project provides a consistent and automated method for extracting text from various document formats. This enables data scientists and analysts to preprocess large text corpora efficiently, facilitating tasks like topic modeling, sentiment analysis, entity recognition, and more.
 
 ### 🎓 Academic Research
