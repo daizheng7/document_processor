@@ -32,7 +32,7 @@ def main(run_debug=False):
     print("Finished processing Word 97 files.")
     
     print("Starting to process Images with Keras-OCR")
-    process_images_folder(settings.images_folder, settings.output_folder, settings.log_csv_path)
+    process_ocr_folder(settings.ocr_folder, settings.output_folder, settings.log_csv_path)
     print("Finished processing Images.")
 
     if run_debug:

@@ -1,11 +1,10 @@
 import os
 
 #add folders source and output
-source_folder = r'C:\Users\messy_docs'
-output_folder = r'C:\Users\messy_docs_txt'
-log_csv_path = r'C:\Users\messy_docs\conversion_log.csv'
-missing_files_txt = r'C:\Users\messy_docs\missing_files_txt'
-
+source_folder = '/path/to/source'
+output_folder = '/path/to/output'
+log_csv_path = '/path/to/conversion_log.csv'
+missing_files_txt = '/path/to/missing_files_txt'
 
 word_folder = os.path.join(source_folder, 'docs_word')
 word97_folder = os.path.join(source_folder, 'docs_word97')
@@ -15,4 +14,5 @@ excel_folder = os.path.join(source_folder, 'docs_excel')
 others_folder = os.path.join(source_folder,'docs_others')
 images_folder = os.path.join(source_folder,'docs_images')
 pdf_errors_folder = os.path.join(source_folder,'docs_pdf_errors')
+missing_files_txt = os.path.join(source_folder, 'missing_files_txt')
 

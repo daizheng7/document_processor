@@ -1,9 +1,10 @@
 # utils/debug_missing_files.py
+
 import pandas as pd
 import os
 import urllib.parse
 import shutil
-from config.settings import docs_folder, txt_final_folder, missing_files_txt
+from config.settings import ocr_folder, output_folder, missing_files_txt
 
 # Function to get all file paths in a directory recursively
 def get_all_file_paths(directory):
