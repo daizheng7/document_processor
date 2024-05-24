@@ -156,4 +156,5 @@ This project is designed with modularity in mind, making it easy to extend and m
 2. **Support for Additional File Types**: Extend support to other file types such as images, HTML, and more.
 3. **Metadata Extraction**: Add functionality to extract and process metadata from documents.
 4. **Misnamed file types**: Add support for mislabelled file types so that a .pdf file that is actually a .jpeg file will still be processed correctly.
-5. **Collaborative Tools**: Integrate collaborative features for better teamwork and sharing of processed documents.
+5. **Database Ingestion Pipeline**: Add a pipeline for ingesting the extracted text into a PostgreSQL database to facilitate more advanced querying and analysis of the extracted data.
+6. **AWS Integration**: Add integration with AWS services, such as S3 for storage and Lambda for serverless processing, to provide a scalable and cloud-based solution for document processing and text extraction.
