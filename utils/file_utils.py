@@ -1,7 +1,20 @@
 import os
 import shutil
 import csv
+import fitz  # PyMuPDF
 from .log_utils import log_error
+
+def is_pdf_image_based(file_path):
+    try:
+        doc = fitz.open(file_path)
+        for page in doc:
+            text = page.get_text("text")
+            if text.strip():
+                return False
+        return True
+    except Exception as e:
+        print(f"Failed to open PDF file: {file_path}. Error: {e}")
+        return None
 
 def move_files(source_folder):
     dest_folders = {

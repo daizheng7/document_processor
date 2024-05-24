@@ -52,7 +52,7 @@ def process_folder(folder_path, output_folder, log_path):
 def extract_text_from_word_97(file_path):
     import win32com.client
     word = win32com.client.Dispatch("Word.Application")
-    word.Visible = False
+    word.Visible = True
     try:
         doc = word.Documents.Open(file_path)
         text = doc.Content.Text
@@ -65,10 +65,15 @@ def extract_text_from_word_97(file_path):
 
 def process_word97_folder(input_folder, output_folder, log_path):
     for file_path in glob.glob(f"{input_folder}/*.doc"):
+        output_file_name = os.path.basename(file_path).replace('.doc', '.txt')
+        output_file_path = os.path.join(output_folder, output_file_name)
+
+        if os.path.exists(output_file_path):
+            print(f"{output_file_path} already exists. Skipping.")
+            continue
+        
         try:
             output_text = extract_text_from_word_97(file_path)
-            output_file_path = os.path.join(output_folder, f"{os.path.basename(file_path)}.txt")
-
             with open(output_file_path, 'w', encoding='utf-8') as f:
                 f.write(output_text)
             print(f"Processed and saved: {output_file_path}")
