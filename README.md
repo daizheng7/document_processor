@@ -94,6 +94,13 @@ This project automates the organization and text extraction from various documen
 - `save_text`: Saves text to a file.
 - `process_folder`: Processes all .docx files.
 - `extract_text_from_word_97`: Extracts text from .doc files.
+**Note**: This function uses the `win32com.client` library to open and read `.doc` files programmatically through the Word application. To enable this, you need to allow programmatic access to the Word object model. To do this, follow these steps:
+1. Open Microsoft Word.
+2. Go to `File` > `Options`.
+3. Select `Trust Center` from the menu on the left.
+4. Click on the `Trust Center Settings` button.
+5. Select `Macro Settings`.
+6. Ensure that "Trust access to the VBA project object model" is checked.
 - `process_word97_folder`: Batch processes .doc files.
 
 ### `utils/excel_utils.py`
