@@ -1,9 +1,10 @@
 import os
 
 #add folders source and output
-source_folder = r'D:\data\CGIAR\UNFCCC\gef_docs\gef_docs\docs_word97'
-output_folder = r'D:\data\CGIAR\UNFCCC\gef_txt_old_word'
-log_csv_path = r'C:\Users\david\OneDrive\Desktop\CSSS\conversion_log_final.csv'
+source_folder = r'C:\Users\messy_docs'
+output_folder = r'C:\Users\messy_docs_txt'
+log_csv_path = r'C:\Users\messy_docs\conversion_log.csv'
+missing_files_txt = r'C:\Users\messy_docs\missing_files_txt'
 
 
 word_folder = os.path.join(source_folder, 'docs_word')
